@@ -19,7 +19,10 @@ import vue from "../public/assets/vue.png";
 
 const TechStack = () => {
   return (
-    <div id="tech-stack" className="py-20 min-h-screen">
+    <div
+      id="tech-stack"
+      className="py-20 min-h-screen flex items-center justify-center"
+    >
       <div className="container">
         <h1 className="text-center text-4xl font-bold">Tech Stack</h1>
         <p className="lilita-font text-center pt-2">⭐</p>
