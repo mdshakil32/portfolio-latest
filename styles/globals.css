@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -15,11 +16,14 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .lilita-font {
   font-family: "Lilita One", cursive;
 }
-
+.mulish-font {
+  font-family: "Mulish", sans-serif;
+}
 /* ======= banner styles  */
 .intro {
   transition: 1s;
@@ -34,9 +38,54 @@ body {
   background-size: cover;
   box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
   justify-self: center;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   animation: profile_animation 8s ease-in-out infinite 1s;
+}
+
+.screen {
+  display: block;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.screen img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: top 11s;
+  -moz-transition: top 11s;
+  -ms-transition: top 11s;
+  -o-transition: top 11s;
+  transition: bottom 11s;
+}
+.screen:hover img {
+  bottom: 0;
+  -webkit-transition: all 11s;
+  -moz-transition: all 11s;
+  -ms-transition: all 11s;
+  -o-transition: all 11s;
+  transition: all 11s;
+}
+
+@media only screen and (max-width: 640px) {
+  /* -------------- */
+  .profile_img {
+    background: url("../public/assets/shakil.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+    animation: profile_animation 8s ease-in-out infinite 1s;
+  }
 }
 
 @keyframes profile_animation {
