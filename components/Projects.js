@@ -159,8 +159,8 @@ const Projects = () => {
               Tralive
             </h1>
             <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              This was a practice project as beginner While I was learning
-              React.
+              (This was a practice project as beginner While I was learning
+              React.)
               <br /> <br />
               This is a simple website about Tourism where people can book their
               currently offering packages. Popular tourist spots are in those
@@ -203,8 +203,8 @@ const Projects = () => {
               Orion Safety
             </h1>
             <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              This was a practice project as beginner While I was learning
-              React.
+              (This was a practice project as beginner While I was learning
+              React.)
               <br /> <br />
               Its about company who make safety equipments.
             </h1>
