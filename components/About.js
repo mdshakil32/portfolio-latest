@@ -18,13 +18,11 @@ const About = () => {
 
         <p className="text-center pt-2">⭐</p>
         <p className={`${fredoka.className} text-center pt-10`}>
-          Graduate of computer science with full time work experience across the
-          frontend web development. Looking for a role where I can grow and
-          learn from experienced team members while drawing on project
-          experience I have already successfully executed. My new ideas show me,
-          how to be professional and to much originative. Proper activity in a
-          work is important. That's why I always try to give more attention to
-          my work.
+          Experienced Frontend Engineer with a strong eye for design. Proficient
+          in JavaScript, React and Vue and skilled in creating seamless user
+          interfaces. Committed to delivering high-performance, visually
+          appealing web experiences. Collaborative and creative problem-solver.
+          Let's build something amazing together!
         </p>
 
         <div className="md:grid grid-cols-2 pt-10">
