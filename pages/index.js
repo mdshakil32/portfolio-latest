@@ -8,6 +8,7 @@ import TechStack from "@/components/TechStack";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
+import Projects2 from "@/components/Projects2";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         <Banner />
         <About />
         <TechStack />
-        <Projects />
+        <Projects2 />
         <Contact />
         <Footer />
       </main>

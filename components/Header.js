@@ -4,6 +4,16 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
+import { Fredoka, Bungee_Inline, Baloo_2, Mulish } from "@next/font/google";
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+import localFont from "@next/font/local";
+const doubleBubble = localFont({ src: "../fonts/Double_Bubble.otf" });
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -40,11 +50,11 @@ const Header = () => {
     >
       <div className="container mx-auto">
         <div className="h-20 flex items-center justify-between">
-          <div>
+          <div style={doubleBubble.style}>
             <Link
               href="#home"
               scroll={false}
-              className="text-4xl lilita-font font-semibold"
+              className={`text-[50px] select-none`}
             >
               Shakil
             </Link>
@@ -53,35 +63,35 @@ const Header = () => {
             <Link
               href="#home"
               scroll={false}
-              className="text-lg font-semibold lilita-font hover:text-sky-600 duration-200"
+              className={`${fredoka.className} text-lg font-semibold hover:text-sky-600 duration-200`}
             >
               Home
             </Link>
             <Link
               href="/#about"
               scroll={false}
-              className="text-lg font-semibold lilita-font hover:text-sky-600 duration-200"
+              className={`${fredoka.className} text-lg font-semibold hover:text-sky-600 duration-200`}
             >
               About
             </Link>
             <Link
               href="/#tech-stack"
               scroll={false}
-              className="text-lg font-semibold lilita-font hover:text-sky-600 duration-200"
+              className={`${fredoka.className} text-lg font-semibold hover:text-sky-600 duration-200`}
             >
               Tech Stack
             </Link>
             <Link
               href="/#projects"
               scroll={false}
-              className="text-lg font-semibold lilita-font hover:text-sky-600 duration-200"
+              className={`${fredoka.className} text-lg font-semibold hover:text-sky-600 duration-200`}
             >
               Projects
             </Link>
             <Link
               href="/#contact"
               scroll={false}
-              className="text-lg font-semibold lilita-font hover:text-sky-600 duration-200"
+              className={`${fredoka.className} text-lg font-semibold hover:text-sky-600 duration-200`}
             >
               Contact
             </Link>

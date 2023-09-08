@@ -5,15 +5,30 @@ import bom from "../public/assets/BOM.png";
 import tralive from "../public/assets/tralive.png";
 import orion from "../public/assets/orion.png";
 import Link from "next/link";
+
+import { Fredoka } from "@next/font/google";
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 const Projects = () => {
   return (
     <div id="projects" className="bg-[#f9f9f9] py-20 min-h-screen">
       <div className="container">
-        <h1 className="text-center text-4xl font-bold">Projects </h1>
-        <p className="lilita-font text-center pt-2">⭐</p>
-        <h1 className=" font-bold lilita-font text-[#2d2e32] text-center ">
+        <h1
+          className={`${fredoka.className} text-center text-4xl font-semibold`}
+        >
+          Projects
+        </h1>
+        <p className=" text-center pt-2">⭐</p>
+        <h1
+          className={`${fredoka.className} font-bold text-[#2d2e32] text-center`}
+        >
           (Each project is a unique piece of development)
         </h1>
+
         {/* ======== single item  */}
         <div className="mt-20 lg:grid grid-cols-2 items-center shadow-lg p-3 rounded-xl">
           <div class="shadow-xl rounded-lg">
@@ -26,11 +41,7 @@ const Projects = () => {
             <h1 className="text-lg font-bold lilita-font text-[#2d2e32]">
               Singularity Limited
             </h1>
-            <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              This is singularity Ltd's official website which is one of my very
-              first professional project. Through this site, an user will get a
-              basic overall idea about Singularity Ltd.
-            </h1>
+
             <div className="my-4 flex items-center flex-wrap justify-center">
               <button className="bg-sky-400 px-3 py-1 rounded-lg text-white shadow-lg m-1">
                 Vue 2
@@ -70,14 +81,7 @@ const Projects = () => {
             <h1 className="text-lg font-bold lilita-font text-[#2d2e32]">
               BHN Reservations
             </h1>
-            <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              This is online food ordering & reservation system. <br />
-              <br />
-              Customer can Reserve a table for any any specific date with time
-              in a available restaurant Along with reservation, customer can
-              preorder food items Customar can also place takeway food order
-              without any reservation
-            </h1>
+
             <div className="my-4 flex items-center flex-wrap justify-center">
               <button className="bg-sky-400 px-3 py-1 rounded-lg text-white shadow-lg m-1">
                 Vue Js
@@ -117,10 +121,7 @@ const Projects = () => {
             <h1 className="text-lg font-bold lilita-font text-[#2d2e32]">
               Battle of Minds
             </h1>
-            <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              This is a product of British American Tobacco, Bangladesh. Its
-              about BAT's competition & Game
-            </h1>
+
             <div className="my-4 flex items-center flex-wrap justify-center">
               <button className="bg-sky-400 px-3 py-1 rounded-lg text-white shadow-lg m-1">
                 Vanila js
@@ -158,14 +159,7 @@ const Projects = () => {
             <h1 className="text-lg font-bold lilita-font text-[#2d2e32]">
               Tralive
             </h1>
-            <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              (This was a practice project as beginner While I was learning
-              React.)
-              <br /> <br />
-              This is a simple website about Tourism where people can book their
-              currently offering packages. Popular tourist spots are in those
-              packages and their prices.
-            </h1>
+
             <div className="my-4 flex items-center flex-wrap justify-center">
               <button className="bg-sky-400 px-3 py-1 rounded-lg text-white shadow-lg m-1">
                 React
@@ -202,12 +196,7 @@ const Projects = () => {
             <h1 className="text-lg font-bold lilita-font text-[#2d2e32]">
               Orion Safety
             </h1>
-            <h1 className=" mulish-font text-[#555] font-semibold mt-3">
-              (This was a practice project as beginner While I was learning
-              React.)
-              <br /> <br />
-              Its about company who make safety equipments.
-            </h1>
+
             <div className="my-4 flex items-center flex-wrap justify-center">
               <button className="bg-sky-400 px-3 py-1 rounded-lg text-white shadow-lg m-1">
                 React Js

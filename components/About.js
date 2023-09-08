@@ -1,13 +1,23 @@
 import React from "react";
+import { Fredoka } from "@next/font/google";
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 const About = () => {
   return (
     <div id="about" className="bg-[#f9f9f9] py-20">
       <div className="container">
-        <h1 className="text-center text-4xl font-bold">About Me </h1>
+        <h1
+          className={`${fredoka.className} text-center text-4xl font-semibold`}
+        >
+          About Me
+        </h1>
 
-        <p className="lilita-font text-center pt-2">⭐</p>
-        <p className="lilita-font text-center pt-10">
+        <p className="text-center pt-2">⭐</p>
+        <p className={`${fredoka.className} text-center pt-10`}>
           Graduate of computer science with full time work experience across the
           frontend web development. Looking for a role where I can grow and
           learn from experienced team members while drawing on project
@@ -19,7 +29,7 @@ const About = () => {
 
         <div className="md:grid grid-cols-2 pt-10">
           <div className=" ">
-            <h1 className="text-2xl font-bold pt-10 lilita-font">
+            <h1 className={`${fredoka.className} text-2xl font-semibold pt-10`}>
               Education 📒
             </h1>
 
@@ -46,7 +56,7 @@ const About = () => {
             </div>
           </div>
           <div className=" ">
-            <h1 className=" text-2xl font-bold pt-10 lilita-font">
+            <h1 className={`${fredoka.className} text-2xl font-semibold pt-10`}>
               Experience 💻
             </h1>
 

@@ -37,7 +37,7 @@ const Intro = () => {
 
           <div class="role">
             <div class="block"></div>
-            <p>have a good day</p>
+            <p>A very warm welcome to you</p>
           </div>
         </div>
       </div>

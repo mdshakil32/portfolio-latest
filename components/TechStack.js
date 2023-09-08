@@ -17,6 +17,13 @@ import redux from "../public/assets/redux.png";
 import pinia from "../public/assets/pinia.jpg";
 import vue from "../public/assets/vue.png";
 
+import { Fredoka } from "@next/font/google";
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 const TechStack = () => {
   return (
     <div
@@ -24,9 +31,13 @@ const TechStack = () => {
       className="py-20 min-h-screen flex items-center justify-center"
     >
       <div className="container">
-        <h1 className="text-center text-4xl font-bold">Tech Stack</h1>
-        <p className="lilita-font text-center pt-2">⭐</p>
-        <p className="lilita-font text-center pt-10">
+        <h1
+          className={`${fredoka.className} text-center text-4xl font-semibold`}
+        >
+          Tech Stack
+        </h1>
+        <p className="text-center pt-2">⭐</p>
+        <p className={`${fredoka.className} text-center pt-10`}>
           As a skilled frontend developer, my technology stack encompasses a
           powerful set of tools and frameworks tailored to crafting captivating
           user experiences and responsive interfaces. My proficiency lies in a
@@ -40,7 +51,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={html.src}
             />
-            <p className="lilita-font">HTML</p>
+            <p className={fredoka.className}>HTML</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -48,7 +59,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={css.src}
             />
-            <p className="lilita-font">CSS</p>
+            <p className={fredoka.className}>CSS</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -56,7 +67,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={jquery.src}
             />
-            <p className="lilita-font">Jquery</p>
+            <p className={fredoka.className}>Jquery</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -64,7 +75,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={js.src}
             />
-            <p className="lilita-font">Javascript</p>
+            <p className={fredoka.className}>Javascript</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -72,7 +83,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={react.src}
             />
-            <p className="lilita-font">React Js</p>
+            <p className={fredoka.className}>React Js</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -80,7 +91,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={next.src}
             />
-            <p className="lilita-font">Next Js</p>
+            <p className={fredoka.className}>Next Js</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -88,7 +99,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={redux.src}
             />
-            <p className="lilita-font">Redux</p>
+            <p className={fredoka.className}>Redux</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -96,7 +107,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={vue.src}
             />
-            <p className="lilita-font">Vue Js</p>
+            <p className={fredoka.className}>Vue Js</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -104,7 +115,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={nuxtIcon.src}
             />
-            <p className="lilita-font">Nuxt Js</p>
+            <p className={fredoka.className}>Nuxt Js</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -112,7 +123,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={vuexIcon.src}
             />
-            <p className="lilita-font">Vuex</p>
+            <p className={fredoka.className}>Vuex</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -120,7 +131,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={pinia.src}
             />
-            <p className="lilita-font">Pinia</p>
+            <p className={fredoka.className}>Pinia</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -128,7 +139,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={mongo.src}
             />
-            <p className="lilita-font">Mongo</p>
+            <p className={fredoka.className}>Mongo</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -136,7 +147,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={node.src}
             />
-            <p className="lilita-font">Node</p>
+            <p className={fredoka.className}>Node</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -144,7 +155,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={mui.src}
             />
-            <p className="lilita-font">Material UI</p>
+            <p className={fredoka.className}>Material UI</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -152,7 +163,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={tailwind.src}
             />
-            <p className="lilita-font">Tailwind</p>
+            <p className={fredoka.className}>Tailwind</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -160,7 +171,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={bootstrap.src}
             />
-            <p className="lilita-font">Bootstrap</p>
+            <p className={fredoka.className}>Bootstrap</p>
           </div>
           <div className="flex flex-col items-center justify center p-1">
             <img
@@ -168,7 +179,7 @@ const TechStack = () => {
               className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
               src={mobile.src}
             />
-            <p className="lilita-font">Responsive</p>
+            <p className={fredoka.className}>Responsive</p>
           </div>
         </div>
       </div>

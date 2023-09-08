@@ -5,6 +5,12 @@ import waving from "../public/assets/waving.png";
 import GithubSVG from "./SVG/GithubSVG";
 import LinkedinSVG from "./SVG/LinkedinSVG";
 import Link from "next/link";
+import { Fredoka } from "@next/font/google";
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 const Banner = () => {
   return (
@@ -15,18 +21,22 @@ const Banner = () => {
         </div>
 
         <div className="order-1">
-          <h1 className="md:text-6xl text-2xl font-bold lilita-font text-[#2d2e32] mt-2">
-            Front-End Developer
+          <h1
+            className={`${fredoka.className} md:text-6xl text-2xl font-semibold text-[#2d2e32] mt-2`}
+          >
+            Frontend Engineer
           </h1>
           <div className="flex items-center space-x-4 mt-2">
-            <h1 className="md:text-6xl text-2xl font-bold lilita-font text-[#2d2e32]">
+            <h1
+              className={`${fredoka.className} md:text-6xl text-2xl font-semibold text-[#2d2e32]`}
+            >
               React-Vue
             </h1>
             <img className="md:w-[80px] w-[50px]" src={waving.src}></img>
           </div>
 
           <h1 className=" md:text-[20px] text-base mulish-font text-[#555] leading-relaxed my-4">
-            Hi, I'm Md Shakil Chowdhury. A passionate Front-end Developer (React
+            Hi, I'm Md Shakil Chowdhury. A passionate Frontend Engineer (React
             and Vue) based in Dhaka, Bangladesh. 📍
           </h1>
 
