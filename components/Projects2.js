@@ -18,21 +18,26 @@ const Projects2 = () => {
     <div id="projects" className="bg-[#f9f9f9] py-20 min-h-screen">
       <div className="container">
         <h1
+          data-aos="zoom-in"
           className={`${fredoka.className} text-center text-4xl font-semibold`}
         >
           Projects
         </h1>
         <p className=" text-center pt-2">⭐</p>
         <h1
+          data-aos="zoom-out"
           className={`${fredoka.className} font-semibold text-[#2d2e32] text-center`}
         >
           (Each project is a unique piece of development)
         </h1>
 
         {/* ====== projects ====== */}
-        <div>
+        <div className="overflow-hidden">
           {/* ======== single item  */}
-          <div className="mt-20 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white">
+          <div
+            data-aos="fade-right"
+            className="mt-20 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white"
+          >
             <div class="shadow-xl rounded-lg">
               <div class="screen">
                 <img src={singularity.src} className="bottom-[-1500px]" />
@@ -69,7 +74,10 @@ const Projects2 = () => {
           </div>
 
           {/* ======== single item  */}
-          <div className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white">
+          <div
+            data-aos="fade-left"
+            className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white"
+          >
             <div class="shadow-xl rounded-lg order-2">
               <div class="screen">
                 <img
@@ -109,7 +117,10 @@ const Projects2 = () => {
           </div>
 
           {/* ======== single item  */}
-          <div className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white">
+          <div
+            data-aos="fade-right"
+            className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white"
+          >
             <div class="shadow-xl rounded-lg ">
               <div class="screen">
                 <img
@@ -147,7 +158,10 @@ const Projects2 = () => {
           </div>
 
           {/* ======== single item  */}
-          <div className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white">
+          <div
+            data-aos="fade-left"
+            className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white"
+          >
             <div class="shadow-xl rounded-lg order-2">
               <div class="screen">
                 <img
@@ -187,7 +201,10 @@ const Projects2 = () => {
           </div>
 
           {/* ======== single item  */}
-          <div className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white">
+          <div
+            data-aos="fade-right"
+            className="mt-10 lg:grid grid-cols-2 items-center shadow-xl p-6 rounded-2xl bg-white"
+          >
             <div class="shadow-xl rounded-lg ">
               <div class="screen">
                 <img src={orion.src} className="bottom-[-800px]" />

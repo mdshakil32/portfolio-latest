@@ -8,16 +8,21 @@ const fredoka = Fredoka({
 
 const About = () => {
   return (
-    <div id="about" className="bg-[#f9f9f9] py-20">
-      <div className="container">
+    <div id="about" className="bg-[#f9f9f9] py-20 overflow-hidden">
+      <div className="container overflow-hidden">
         <h1
+          data-aos="zoom-in"
+          data-aos-delay="100"
           className={`${fredoka.className} text-center text-4xl font-semibold`}
         >
           About Me
         </h1>
 
         <p className="text-center pt-2">⭐</p>
-        <p className={`${fredoka.className} text-center pt-10`}>
+        <p
+          data-aos="zoom-out"
+          className={`${fredoka.className} text-center pt-10`}
+        >
           Experienced Frontend Engineer with a strong eye for design. Proficient
           in JavaScript, React and Vue and skilled in creating seamless user
           interfaces. Committed to delivering high-performance, visually
@@ -26,26 +31,42 @@ const About = () => {
         </p>
 
         <div className="md:grid grid-cols-2 pt-10">
+          {/* ===== Education ===== */}
           <div className=" ">
-            <h1 className={`${fredoka.className} text-2xl font-semibold pt-10`}>
+            <h1
+              data-aos="fade-right"
+              className={`${fredoka.className} text-2xl font-semibold pt-10`}
+            >
               Education 📒
             </h1>
 
-            <div className="mt-10 border-l-4 border-yellow-400 pl-2">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              className="mt-10 border-l-4 border-yellow-400 pl-2"
+            >
               <h1 className="text-lg font-semibold mulish-font text-[#555] ">
                 Bachelor's Degree
               </h1>
               <p className="mulish-font text-[#555]">Year: 2021</p>
               <p className="mulish-font text-[#555]">Department: CSE</p>
             </div>
-            <div className="mt-10 border-l-4 border-yellow-400 pl-2">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              className="mt-10 border-l-4 border-yellow-400 pl-2"
+            >
               <h1 className="text-lg font-semibold mulish-font text-[#555] ">
                 Higher Secondary School Certificate
               </h1>
               <p className="mulish-font text-[#555]">Year: 2016</p>
               <p className="mulish-font text-[#555]">Section: Science</p>
             </div>
-            <div className="mt-10 border-l-4 border-yellow-400 pl-2">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              className="mt-10 border-l-4 border-yellow-400 pl-2"
+            >
               <h1 className="text-lg font-semibold mulish-font text-[#555] ">
                 Secondary School Certificate
               </h1>
@@ -53,17 +74,26 @@ const About = () => {
               <p className="mulish-font text-[#555]">Section: Science</p>
             </div>
           </div>
+
+          {/* ===== Experience ====== */}
           <div className=" ">
-            <h1 className={`${fredoka.className} text-2xl font-semibold pt-10`}>
+            <h1
+              data-aos="fade-left"
+              className={`${fredoka.className} text-2xl font-semibold pt-10`}
+            >
               Experience 💻
             </h1>
 
-            <div className="mt-10 border-l-4 border-sky-400 pl-2">
+            <div
+              data-aos="zoom-out"
+              data-aos-delay="100"
+              className="mt-10 border-l-4 border-sky-400 pl-2"
+            >
               <h1 className="text-lg font-semibold mulish-font text-[#555] ">
                 Singularity Limited
               </h1>
               <p className="mulish-font text-[#555]">
-                Position : Jr Frontend Developer
+                Position : Frontend Engineer
               </p>
               <p className="mulish-font text-[#555]">
                 Duration : 03 April 2022 - present
@@ -73,7 +103,11 @@ const About = () => {
               </p>
             </div>
 
-            <div className="mt-10 border-l-4 border-sky-400 pl-2">
+            <div
+              data-aos="zoom-out"
+              data-aos-delay="200"
+              className="mt-10 border-l-4 border-sky-400 pl-2"
+            >
               <h1 className="text-lg font-semibold mulish-font text-[#555] ">
                 Shodaimama
               </h1>

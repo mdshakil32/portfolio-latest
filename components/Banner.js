@@ -44,7 +44,7 @@ const Banner = () => {
             href="https://drive.google.com/file/d/1py8WUvftNmlFW7XDORNfs9Ng5cc3LbXM/view?pli=1"
             target="_blank"
           >
-            <button className=" bg-sky-400 text-white p-2 rounded shadow hover:shadow-xl duration-200">
+            <button className=" bg-sky-400 border-2 border-sky-400 hover:bg-white hover:text-sky-400 text-white p-2 rounded shadow hover:shadow-xl duration-200">
               Open Resume
             </button>
           </Link>
@@ -55,7 +55,7 @@ const Banner = () => {
             >
               <LinkedinSVG />
             </Link>
-            <Link href="https://github.com/shakil-singularity" target="_blank">
+            <Link href="https://github.com/mdshakil32" target="_blank">
               <GithubSVG />
             </Link>
           </div>

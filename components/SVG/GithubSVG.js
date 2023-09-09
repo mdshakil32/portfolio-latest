@@ -4,8 +4,7 @@ const GithubSVG = () => {
   return (
     <div>
       <svg
-        fill="#000000"
-        className="h-10 w-10"
+        className="fill-black h-10 w-10 hover:scale-125 duration-200"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"

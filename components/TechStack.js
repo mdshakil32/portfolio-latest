@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import bootstrap from "../public/assets/bootstrap.png";
 import css from "../public/assets/css.png";
 import html from "../public/assets/html-5.png";
@@ -25,6 +25,25 @@ const fredoka = Fredoka({
 });
 
 const TechStack = () => {
+  const [techs, setTechs] = useState([
+    { name: "HTML", image: html, time: 50 },
+    { name: "CSS", image: css, time: 150 },
+    { name: "Jquery", image: jquery, time: 250 },
+    { name: "Javascript", image: js, time: 350 },
+    { name: "React Js", image: react, time: 450 },
+    { name: "Next Js", image: next, time: 550 },
+    { name: "Redux", image: redux, time: 650 },
+    { name: "Vue Js", image: vue, time: 750 },
+    { name: "Nuxt Js", image: nuxtIcon, time: 850 },
+    { name: "Vuex", image: vuexIcon, time: 950 },
+    { name: "Pinia", image: pinia, time: 1050 },
+    { name: "Mongo", image: mongo, time: 1150 },
+    { name: "Node", image: node, time: 1250 },
+    { name: "Material UI", image: mui, time: 1350 },
+    { name: "Tailwind", image: tailwind, time: 1450 },
+    { name: "Bootstrap", image: bootstrap, time: 1550 },
+    { name: "Responsive", image: mobile, time: 1650 },
+  ]);
   return (
     <div
       id="tech-stack"
@@ -32,12 +51,16 @@ const TechStack = () => {
     >
       <div className="container">
         <h1
+          data-aos="zoom-in"
           className={`${fredoka.className} text-center text-4xl font-semibold`}
         >
           Tech Stack
         </h1>
         <p className="text-center pt-2">⭐</p>
-        <p className={`${fredoka.className} text-center pt-10`}>
+        <p
+          data-aos="zoom-out"
+          className={`${fredoka.className} text-center pt-10`}
+        >
           As a skilled frontend developer, my technology stack encompasses a
           powerful set of tools and frameworks tailored to crafting captivating
           user experiences and responsive interfaces. My proficiency lies in a
@@ -45,142 +68,21 @@ const TechStack = () => {
           enable me to bring designs to life seamlessly.
         </p>
         <div className="flex flex-wrap items-center justify-center pt-10 ">
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="HTML"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={html.src}
-            />
-            <p className={fredoka.className}>HTML</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="CSS"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={css.src}
-            />
-            <p className={fredoka.className}>CSS</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Jquery"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={jquery.src}
-            />
-            <p className={fredoka.className}>Jquery</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Js"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={js.src}
-            />
-            <p className={fredoka.className}>Javascript</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="React Js"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={react.src}
-            />
-            <p className={fredoka.className}>React Js</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Next Js"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={next.src}
-            />
-            <p className={fredoka.className}>Next Js</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Redux Storage"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={redux.src}
-            />
-            <p className={fredoka.className}>Redux</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Vue Js"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={vue.src}
-            />
-            <p className={fredoka.className}>Vue Js</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Nuxt Js"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={nuxtIcon.src}
-            />
-            <p className={fredoka.className}>Nuxt Js</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Vuex Storage"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={vuexIcon.src}
-            />
-            <p className={fredoka.className}>Vuex</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Pinia Storage"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={pinia.src}
-            />
-            <p className={fredoka.className}>Pinia</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Mongo"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={mongo.src}
-            />
-            <p className={fredoka.className}>Mongo</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Node"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={node.src}
-            />
-            <p className={fredoka.className}>Node</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Material UI"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={mui.src}
-            />
-            <p className={fredoka.className}>Material UI</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Tailwind"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={tailwind.src}
-            />
-            <p className={fredoka.className}>Tailwind</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Bootstrap"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={bootstrap.src}
-            />
-            <p className={fredoka.className}>Bootstrap</p>
-          </div>
-          <div className="flex flex-col items-center justify center p-1">
-            <img
-              title="Responsive"
-              className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
-              src={mobile.src}
-            />
-            <p className={fredoka.className}>Responsive</p>
-          </div>
+          {techs.map((tech, index) => (
+            <div
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={tech.time}
+              className="flex flex-col items-center justify center p-1"
+            >
+              <img
+                title={tech.name}
+                className="w-20 h-20 m-2 shadow hover:shadow-xl p-1 duration-200 rounded-lg"
+                src={tech.image.src}
+              />
+              <p className={fredoka.className}>{tech.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
