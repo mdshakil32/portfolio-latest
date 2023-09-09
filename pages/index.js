@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="overflow-hidden">
-        {/* <Intro /> */}
+        <Intro />
         <Header />
         <Banner />
         <About />
