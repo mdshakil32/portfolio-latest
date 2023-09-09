@@ -22,17 +22,17 @@ const Banner = () => {
 
         <div className="order-1">
           <h1
-            className={`${fredoka.className} md:text-6xl text-2xl font-semibold text-[#2d2e32] mt-2`}
+            className={`${fredoka.className} md:text-6xl text-[32px] font-semibold text-[#2d2e32] mt-2`}
           >
             Frontend Engineer
           </h1>
           <div className="flex items-center space-x-4 mt-2">
             <h1
-              className={`${fredoka.className} md:text-6xl text-2xl font-semibold text-[#2d2e32]`}
+              className={`${fredoka.className} md:text-6xl text-[32px] font-semibold text-[#2d2e32]`}
             >
               React-Vue
             </h1>
-            <img className="md:w-[80px] w-[50px]" src={waving.src}></img>
+            <img className="md:w-[80px] w-[45px]" src={waving.src}></img>
           </div>
 
           <h1 className=" md:text-[20px] text-base mulish-font text-[#555] leading-relaxed my-4">
