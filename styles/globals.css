@@ -183,6 +183,30 @@ body {
   font-size: 14px;
   letter-spacing: 2px;
 }
+.wave-shake {
+  animation: horizontal-shaking 2s infinite;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: rotate(15deg);
+  }
+  5% {
+    transform: rotate(15deg);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes mainBlock {
   0% {
     width: 0%;
