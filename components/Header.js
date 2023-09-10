@@ -97,7 +97,7 @@ const Header = () => {
             </Link>
           </div>
           {/* Hamburger Menu for Mobile */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center rounded-xl">
             <button
               className="hover:bg-sky-200 duration-300 rounded-xl p-2"
               onClick={toggleMobileMenu}
@@ -130,33 +130,38 @@ const Header = () => {
             }`}
           >
             <p
+              style={fredoka.style}
               onClick={() => clickLink("/#home")}
-              className="cursor-pointer text-lg font-semibold lilita-font border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
+              className="cursor-pointer text-lg font-semibold border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
             >
               Home
             </p>
             <p
+              style={fredoka.style}
               onClick={() => clickLink("/#about")}
-              className="cursor-pointer text-lg font-semibold lilita-font border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
+              className="cursor-pointer text-lg font-semibold  border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
             >
               About
             </p>
 
             <p
+              style={fredoka.style}
               onClick={() => clickLink("/#tech-stack")}
-              className="cursor-pointer text-lg font-semibold lilita-font border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
+              className="cursor-pointer text-lg font-semibold  border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
             >
               Tech Stack
             </p>
             <p
+              style={fredoka.style}
               onClick={() => clickLink("/#projects")}
-              className="cursor-pointer text-lg font-semibold lilita-font border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
+              className="cursor-pointer text-lg font-semibold border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
             >
               Projects
             </p>
             <p
+              style={fredoka.style}
               onClick={() => clickLink("/#contact")}
-              className="cursor-pointer text-lg font-semibold lilita-font border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
+              className="cursor-pointer text-lg font-semibold border-l-4  duration-200 hover:border-sky-500 border-transparent hover:bg-sky-100 p-2 rounded"
             >
               Contact
             </p>

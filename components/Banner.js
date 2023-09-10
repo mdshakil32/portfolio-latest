@@ -76,16 +76,22 @@ const Banner = () => {
                 data-aos-delay="600"
                 href="https://www.linkedin.com/in/mdshakil32/"
                 target="_blank"
+                className="rounded-xl"
               >
-                <LinkedinSVG />
+                <button>
+                  <LinkedinSVG />
+                </button>
               </Link>
               <Link
                 data-aos="zoom-in"
                 data-aos-delay="700"
                 href="https://github.com/mdshakil32"
                 target="_blank"
+                className="rounded-xl"
               >
-                <GithubSVG />
+                <button>
+                  <GithubSVG />
+                </button>
               </Link>
             </div>
           </div>
